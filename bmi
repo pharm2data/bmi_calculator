@@ -1,0 +1,17 @@
+patients_height = float(input("Please enter the patient's height in centimeters: "))
+patients_weight = float(input("Please enter the patient's weight in kg: "))
+patients_height = patients_height/100
+patients_BMI = patients_weight/(patients_height*patients_height)
+print("The patient's body mass index is: ", patients_BMI)
+
+if(patients_BMI>0):
+    if(patients_BMI<=16):
+        print("Patient is severely underweight")
+    elif(patients_BMI<=18):
+        print("Patient is underweight")
+    elif(patients_BMI<=25):
+        print("Patient is a normal weight")
+    elif(patients_BMI<=30):
+        print("Patient is overweight")
+    else: print("Patient is severely overweight")
+else:("Information entered is invalid")
